@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rgu"
+version = "0.1.0"
+description = "Royal game of Ur, a 4000 year old board game"
+authors = ["Willem Reynvaan <willem.reynvaan@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pygame = "^2.5.2"
+numpy = "^1.26.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+flake8 = "^7.0.0"
+pre-commit = "^3.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
