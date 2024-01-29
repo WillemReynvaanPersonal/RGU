@@ -15,6 +15,7 @@ numpy = "^1.26.3"
 black = "^24.1.1"
 flake8 = "^7.0.0"
 pre-commit = "^3.6.0"
+pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core"]
