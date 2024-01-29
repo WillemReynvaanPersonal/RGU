@@ -26,6 +26,4 @@ jobs:
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root --with dev
-      - run: |
-          source .venv/bin/activate
-          python -m flake8
+      - run: poetry run flake8
