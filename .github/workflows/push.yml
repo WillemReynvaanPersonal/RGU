@@ -2,7 +2,7 @@ on: push
 
 jobs:
   install-poetry:
-    - uses: ./.github/workflows/install_poetry.yml
+    uses: ./.github/workflows/install_poetry.yml
 
   flake8:
     name: Check flake8
