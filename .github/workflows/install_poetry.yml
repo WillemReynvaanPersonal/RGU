@@ -5,6 +5,7 @@ on:
 
 jobs:
   install-poetry:
+    runs-on: ubuntu-latest
     name: Install Poetry
     steps:
       - uses: actions/checkout@v4
