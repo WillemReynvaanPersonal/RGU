@@ -7,5 +7,5 @@ jobs:
     name: Check flake8
     runs-on: ubuntu-latest
     steps:
-      - needs: ./.github/workflows/install_poetry.yml
+      - uses: ./.github/workflows/install_poetry.yml
       - run: poetry run flake8
