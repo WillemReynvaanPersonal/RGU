@@ -2,10 +2,10 @@ on: push
 
 jobs:
   install-poetry:
+    - uses: ./.github/workflows/install_poetry.yml
 
   flake8:
     name: Check flake8
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/install_poetry.yml
       - run: poetry run flake8
