@@ -9,4 +9,5 @@ jobs:
     name: Check flake8
     runs-on: ubuntu-latest
     steps:
+      - run: ls -a
       - run: poetry run flake8
