@@ -1,11 +1,7 @@
 on: push
 
 jobs:
-  install-poetry:
-    uses: ./.github/workflows/install_poetry.yml
-
   flake8:
-    needs: install-poetry
     name: Check flake8
     runs-on: ubuntu-latest
     steps:
@@ -37,7 +33,6 @@ jobs:
         run: flake8
 
   pytest:
-    needs: install-poetry
     name: Check flake8
     runs-on: ubuntu-latest
     steps:
